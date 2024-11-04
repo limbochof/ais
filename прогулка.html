@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Серуенге шақыру</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+        .invite-text {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .photo {
+            width: 80%;
+            max-width: 600px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .btn {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Серуенге шақырамын</h1>
+        <p class="invite-text">Сізді Алматының көрікті жерлерінде, атап айтқанда, Терренкур немесе Ботаникалық бақта серуендеуге шақырамын!</p>
+    </header>
+
+    <img src="https://example.com/terrenkur-photo.jpg" alt="Termenkur Photo" class="photo">
+    <p>Терренкур немесе Ботаникалық бақта серуендейміз. Келіп қатысыңыз!</p>
+    <a href="https://example.com/photo-source" target="_blank">Фото дереккөзі</a>
+
+    <form id="feedback-form" onsubmit="return submitFeedback()">
+        <button type="submit" class="btn">Серуенге қатысу</button>
+    </form>
+
+    <script>
+        function submitFeedback() {
+            alert('Кері байланыс жіберілді! Рахмет!');
+            // This could also be linked to backend code if needed
+            return false; // Prevents the form from actually submitting
+        }
+    </script>
+
+</body>
+</html>
